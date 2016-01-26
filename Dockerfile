@@ -2,10 +2,9 @@ FROM satoshun/jupyter
 
 MAINTAINER SatoShun <shun.sato1@gmail.com>
 
-ENV KULLA_VERSION kulla--20160121010036
+ENV KULLA_VERSION kulla--20160124010109
 ENV KULLA_HOME /usr/bin/kulla.jar
 ENV JAVA_9_HOME /usr
-
 USER root
 
 # java9 install
@@ -27,7 +26,7 @@ RUN apt-get install -yq oracle-java9-installer && \
         apt-get install -yq oracle-java9-set-default git
 
 # install KULLA
-RUN wget https://adopt-openjdk.ci.cloudbees.com/view/OpenJDK/job/langtools-1.9-linux-x86_64-kulla-dev/lastSuccessfulBuild/artifact/${KULLA_VERSION}.jar -O ${KULLA_VERSION}.jar && \
+RUN wget https://adopt-openjdk.ci.cloudbees.com/view/OpenJDK/job/langtools-1.9-linux-x86_64-kulla-dev/351/artifact/${KULLA_VERSION}.jar -O ${KULLA_VERSION}.jar && \
         cp ${KULLA_VERSION}.jar ${KULLA_HOME}
 
 # create
