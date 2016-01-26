@@ -1,4 +1,4 @@
-# Jupyter with Java9
+# Jupyter with Java9 and kulla
 
 
 ## How to use it?
