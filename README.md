@@ -4,8 +4,8 @@
 ## How to use it?
 
 ```
-$ docker pull satoshun/java9
-$ docker run --rm -it -p 8888:8888 -v "$HOME/notebooks:/notebooks" satoshun/java9
+$ docker pull satoshun/java9-notebook
+$ docker run --rm -it -p 8888:8888 -v "$HOME/notebooks:/notebooks" satoshun/java9-notebook
 ```
 
 `$HOME/notebooks` is your notebook direcotry of local.
